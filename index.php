@@ -23,13 +23,16 @@
                 if ($row["is_hidden"]) 
                     continue;
                         
-                echo "<tr>";
+                echo "<tr id={$row['id']}>";
                 foreach($row as $key => $cell) {
                     if ($key === "id" || $key === "is_hidden")
                         continue;
-                    echo "<td>" . $cell . "</td>";
+                    echo "<td><span>". $cell;
+                    if ($key==="product_quantity") {
+                        echo "</span><input type='number' autocomplete='off'/><button class='button_increase'>+</button></td>";
+                    }
                 }
-                echo "<td><button>Hide</button></td>";
+                echo "</span><td><button style='width: 100%; height: 100%;' class='button_hide'>Hide</button></td>";
                 echo "</tr>";
             }
         ?>

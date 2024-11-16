@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    123
+    <table>
+        <?php
+            
+        ?>
+    </table>
 </body>
 </html>

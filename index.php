@@ -29,7 +29,7 @@
                         continue;
                     echo "<td><span>". $cell;
                     if ($key==="product_quantity") {
-                        echo "</span><input type='number' autocomplete='off'/><button class='button_increase'>+</button></td>";
+                        echo "</span><input type='number' autocomplete='off'/><button class='button_increase'>+</button><button class='button_decrease'>-</button></td>";
                     }
                 }
                 echo "</span><td><button style='width: 100%; height: 100%;' class='button_hide'>Hide</button></td>";
